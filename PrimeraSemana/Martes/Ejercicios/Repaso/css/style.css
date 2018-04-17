@@ -1,0 +1,10 @@
+.clase/*Es una clase, por el .*/
+{
+	color: red;
+	background: #B5FFC7;
+}
+#identificador/*Es un ID, por el #*/
+{
+	color: #B5FFC7;
+	background: red;
+}

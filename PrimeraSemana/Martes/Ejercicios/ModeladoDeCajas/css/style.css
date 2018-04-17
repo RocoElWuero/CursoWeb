@@ -1,0 +1,36 @@
+#padding
+{
+	color: blue;
+	background: yellow;
+	/*padding: 50px;*/
+	/*padding-top: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 50px;*/
+	padding: 50px 70px 80px 15px;
+}
+#border
+{
+	color: white;
+	background-color: red;
+	border: 5px solid black; /*solid es solamente para el border*/
+	/*Y el border solamente acepta un Tamaño*/
+	margin: 0px;
+}
+#margin
+{
+	color: green;
+	background-color: orange;
+	margin: 0px 150px 15px 300px;
+}
+img
+{
+	color: green;
+	background-color: orange;
+	padding: 50px;
+}
+.img
+{
+	border: 25px solid black;
+	margin: 10px;
+}
