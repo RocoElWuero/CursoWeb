@@ -1,0 +1,25 @@
+html
+{
+	background: #2EFEF7;
+}
+.nombre
+{
+	position: fixed;
+}
+img
+{
+	height: 200px;
+	top: 300px;
+}
+.text
+{
+	font-family: 'Arial', bold;
+	margin: 0px;
+	color: green;
+}
+.textV2
+{
+	font-family: 'Arial', cursive;
+	margin: 0px;
+	color: green;
+}
