@@ -1,0 +1,145 @@
+body
+{
+	background: #043754;
+}
+/*Selectores de etiqueta*/
+h1
+{
+	color: white;
+	text-align: center;
+}
+h2
+{
+	color: red;
+	text-align: center;
+}
+div
+{
+	margin: auto;
+}
+/*---------------------*/
+.cuadrado
+{
+	width: 50px;
+	height: 50px;
+	background: red;
+	animation-name: cuadrado;
+	animation-duration: 10s;/*Durara 10Segundos*/
+}
+@keyframes cuadrado
+{
+	0%{background-color: red;}
+	25%{background-color: yellow;}
+	50%{background-color: blue;}
+	100%{background-color: green;}
+}
+.rectangulo
+{
+	width: 100px;
+	height: 00px;
+	background-color: green;
+	/*position: relative;*/
+}
+.triangulo
+{
+	height: 0;
+	width: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid red;
+	position: relative;
+	animation-name: triangulo;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes triangulo
+{
+	0%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: 0px; top: 0px;}
+	25%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: 200px; top: 0px;}
+	50%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: 200px; top: 200px;}
+	75%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: 0px; top: 200px;}
+	100%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid red; left: 0px; top: 0px;}
+}
+.circulo
+{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	animation: circulo 1s linear 0s infinite;
+}
+@keyframes circulo
+{
+	from{box-shadow:
+		100px 0 0 0 white,
+		300px 0 0 0 white,
+		500px 0 0 0 white,
+		700px 0 0 0 white,
+		900px 0 0 0 white,
+		1100px 0 0 0 white,
+		1300px 0 0 0 white;}
+	to{box-shadow:
+		0px 0 0 0 white,
+		-300px 0 0 0 white,
+		500px 0 0 0 white,
+		-700px 0 0 0 white,
+		900px 0 0 0 white,
+		-1100px 0 0 0 white;}
+}
+/*************************************************************/
+.pacman
+{
+	margin: 50px 10px;
+}
+.pacman2
+{
+	background: yellow;
+	height: 100px;
+	width: 200px;
+	border-radius: 100px 100px 0 0;
+}
+.trianguloBoca
+{
+	border-top-right-radius: 140%;
+	height: 0;
+	width: 0;
+	left: 50px;
+	top: 125px;
+	border-left: 100px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 50px solid yellow;
+	position: relative;
+	animation-name: trianguloBoca;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+@keyframes trianguloBoca
+{
+	100%{
+		border-left: 100px solid transparent;
+		border-right: 0px solid transparent;
+		border-bottom: 50px solid #043754;
+	}
+}
+.pacman1
+{
+	background: yellow;
+	height: 100px;
+	width: 200px;
+	border-radius: 0 0 100px 100px;
+}
+/*************************************************************/
+@keyframes ovalo
+{
+	0% {transform: rotate(0deg);left: 0px;}
+	100% {transform: rotate(180deg);left: 0px;}
+}
+.ovalo
+{
+	border-radius: 50%;
+	width: 200px;
+	height: 100px;
+	background: red;
+	position: relative;
+	animation: ovalo 1s infinite;
+}

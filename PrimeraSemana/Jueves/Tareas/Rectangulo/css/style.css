@@ -1,0 +1,29 @@
+html
+{
+	background: cyan;
+}
+.rectanguloOrigi
+{
+	background-color: green;
+	width: 500px;
+	height: 100px;
+	animation-delay: 5s;
+	animation-name: rectanguloChange;
+	animation-duration: 10s;
+}
+@keyframes rectanguloOrigi
+{
+	100%{
+		width: 500px;
+		height: 100px;
+		background-color: green;
+	}
+}
+@keyframes rectanguloChange
+{
+	100%{
+		width: 1000px;
+		height: 100px;
+		background-color: green;
+	}
+}
