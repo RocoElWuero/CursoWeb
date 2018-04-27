@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JS</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript">
+			function vaciar()
+			{
+				document.getElementById("num1").value="";
+			}
+			function cuadrado()
+			{
+				var n = document.getElementById("num1");
+				n.value= n.value* n.value;
+			}
+		</script>
+	</head>
+	<body onload="mostrarDatos()">
+		<div class="row">
+			<div id="lista"></div>
+		</div>
+		<!--<br><br><br><br>-->
+		<!--numero:
+		<input type="tex" id="num1">
+		<button onclick=" vaciar()">vaciar</button>
+		<button onclick="alert('esgvaesS')">alert</button>
+		<button onclick=" cuadrado()">x<sup>2</sup></button>	1-->
+		<!--<br><br><br><br>-->
+		<h3>Escribe tu nombre: </h3>
+		<input type="text" id="cambio" onchange="mayus()">	2
+	</body>
+	<script src="js/app.js"></script>	2
+	<script>
+		function mostrarDatos()
+		{
+			var contador=1;
+			var A='A',B='B',C='C',D='D',E='E';
+			var opciones=[A,B,C,D,E];
+			var num_preguntas=3.9;
+			var salida='<h2>Hola de respuestas: </h2>'+'<form name="formulario">'+'<label for="nombre"> Nombre </label>'+'<ol>';
+
+			for (var i=1; i<=num_preguntas; i++)
+			{
+				salida+='<li>';//li cada una de los elementos
+				for(var j=0; j<5; j++)
+				{
+					salida+='<input id="test'+contador+'" type="radio" name="pregunta['+i+']" value="'+opciones[j]+'"/>'+'<label for="test'+contador+'">'+opciones[j]+'</label>';
+					contador++;
+				}
+				salida+='</li>';
+			}
+			document.getElementById("lista").innerHTML=salida;
+		}
+	</script>
+</html>

@@ -1,0 +1,8 @@
+git init
+git remote add origin https://github.com/RojasCastilloOscar-RocoElWuero/LenguajesProgramacion.git
+git checkout -b gh-pages
+git add .
+git commit -m "Pagina creada"
+git push origin gh-pages
+
+RojasCastilloOscar-RocoElWuero.github.io/LenguajesProgramacion

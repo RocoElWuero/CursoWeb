@@ -1,0 +1,20 @@
+body 
+{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+main {flex: 1 0 auto;}
+
+.parrafo {color: white; font-weight: bold;}
+.parrafo2 {color: red; font-weight: bold;}
+.parrafo3 {color: #FFFF00; font-weight: bold;}
+.parrafo4 {color: #00FF00; font-weight: bold;}
+.parrafo5 {color: black; font-weight: bold;}
+.parrafo6 {color: cyan; font-weight: bold;}
+
+.p_datos
+{
+	color: cyan; font-weight: bold;
+	font: oblique bold 100% cursive;
+}
